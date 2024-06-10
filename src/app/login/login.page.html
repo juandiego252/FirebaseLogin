@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Iniciar sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="form">
+    <ion-item>
+      <ion-label position = "stacked">Email</ion-label>
+      <ion-input [(ngModel)] = 'email'></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position = "stacked">Password</ion-label>
+      <ion-input [(ngModel)] = 'password'></ion-input>
+    </ion-item>
+    <ion-button (click)='login()' expand="block">Login</ion-button>
+    <h5 (click)="goToSignUp()" expand="block">¿No tiene cuenta? <ion-text color="primary">Regístrese aquí</ion-text></h5>
+    <br>
+  </div>
+</ion-content>
